@@ -10,14 +10,14 @@ A small, factual companion to **[ocarinarecomp.wiki](https://ocarinarecomp.wiki/
 
 This repository contains **no binaries, game files, keys or ROMs**, and does not explain how to obtain them. Every project builds or prepares the game on your own PC from a copy you own. Download only from the repositories above.
 
-## Latest release files and SHA-256 (checked 2026-11-08 15:50 UTC)
+## Latest release files and SHA-256 (checked 2026-11-08 16:10 UTC)
 
 | Project | Tag | File | Bytes | SHA-256 |
 |---|---|---|---|---|
 | Ocarina Recomp | `v0.2.7` | `Ocarina-Setup-0.2.7-windows.zip` | 115,815,239 | `044c4584e16017caf19b6f9308bdd30f9977e50cd32516a68b89c2b7d09aee64` |
-| Hookshot | `v2.0.0` | `HookshotBuilder.exe` | 175,616 | `46e1f7d6a8e2649fe34737f3d9536ff5f7e08acefc72d5194dd00ab2c1085672` |
-| Hookshot | `v2.0.0` | `hookshot-setup.txt` | 1,658 | `b4ca5be4ee0b0e9ab8e5cd49d76ff77d4ce0366d3e89185e947011fc837acf9d` |
-| Hookshot | `v2.0.0` | `Hookshot-v2.0.0-x86_64.AppImage` | 215,542,264 | `8d0e537110e4fb864f8c4d223036bcf2a2774c5f1d20a083419ca3f2d952e6f5` |
+| Hookshot | `v2.0.1` | `HookshotBuilder.exe` | 175,616 | `46e1f7d6a8e2649fe34737f3d9536ff5f7e08acefc72d5194dd00ab2c1085672` |
+| Hookshot | `v2.0.1` | `hookshot-setup.txt` | 1,658 | `54efe7fdd2bfded704875ebf0389f5d5036cd8eac4d08911e9f97a042a09349a` |
+| Hookshot | `v2.0.1` | `Hookshot-v2.0.1-x86_64.AppImage` | 215,542,264 | `755e43540f8753c4883bb849c348bec4d7d67d230444fb462c7b2553bde6a133` |
 | TriAevum | `v0.8.0-beta.1.2` | `SHA256SUMS.txt` | 332 | `ebfdc35b8743fb1d32bc6da834e26fcef78e21488ed9566f1194308d276047ed` |
 | TriAevum | `v0.8.0-beta.1.2` | `TriAevum-v0.8.0-beta.1.2-Linux-x86_64.AppImage` | 465,828,344 | `2e80fb50e1d21ffc5cc852a90f715408b82e65839e8baf8b3dbf6f9295d5296a` |
 | TriAevum | `v0.8.0-beta.1.2` | `TriAevum-v0.8.0-beta.1.2-Linux-x86_64.flatpak` | 269,893,960 | `575db1812b37070e9512192bf760d5d78b9efda158b740a089a2eb1a528a54ef` |
@@ -35,6 +35,13 @@ shasum -a 256 Ocarina-Setup-*-windows.zip
 ```
 
 Or drop the file into the in-browser checker on [ocarinarecomp.wiki](https://ocarinarecomp.wiki/) (WebCrypto, nothing is uploaded).
+
+## Hookshot v2.0.1 (2026-11-08)
+
+A fix for v2.0.0's builder and launcher; the game itself is the same as v2.0.0. `HookshotBuilder.exe` is byte-identical to v2.0.0's (same SHA-256); `hookshot-setup.txt` and the AppImage changed.
+
+- The update check no longer says "up to date" when GitHub's API does not answer (60 requests an hour per PC): it falls back to the release's setup list or the builder's own version, so an older game always gets **Update**.
+- Desktop and Start menu shortcuts are created again; after an update the boxes show which shortcuts you have.
 
 ## Hookshot v2.0.0 (2026-11-08)
 
