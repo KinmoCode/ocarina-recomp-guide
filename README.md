@@ -5,18 +5,19 @@ A small, factual companion to **[ocarinarecomp.wiki](https://ocarinarecomp.wiki/
 | Project | Repository | Game edition | Platforms |
 |---|---|---|---|
 | Ocarina Recomp | [sostenesfreitas/ocarina-recomp](https://github.com/sostenesfreitas/ocarina-recomp) | Switch 2 edition (v1.1.1) | Windows ZIP installer |
-| Hookshot | [NotRexed/Hookshot](https://github.com/NotRexed/Hookshot) | Switch 2 edition (build e0f3ccfa) | Windows builder, Linux AppImage |
+| Hookshot | [NotRexed/Hookshot](https://github.com/NotRexed/Hookshot) | Switch 2 edition (build e0f3ccfa) | Windows installer + launcher, Linux AppImage |
 | TriAevum | [coccofresco/TriAevum](https://github.com/coccofresco/TriAevum) | Ocarina of Time 3D (3DS) | Windows ZIP, AppImage, Flatpak |
 
 This repository contains **no binaries, game files, keys or ROMs**, and does not explain how to obtain them. Every project builds or prepares the game on your own PC from a copy you own. Download only from the repositories above.
 
-## Latest release files and SHA-256 (checked 2026-11-08 UTC)
+## Latest release files and SHA-256 (checked 2026-11-08 15:50 UTC)
 
 | Project | Tag | File | Bytes | SHA-256 |
 |---|---|---|---|---|
 | Ocarina Recomp | `v0.2.7` | `Ocarina-Setup-0.2.7-windows.zip` | 115,815,239 | `044c4584e16017caf19b6f9308bdd30f9977e50cd32516a68b89c2b7d09aee64` |
-| Hookshot | `device-lost-fix` | `Hookshot-device-lost-fix-x86_64.AppImage` | 215,493,112 | `29e6214c4403567fc64b04dffee2d37051208d64f8f4d098c7bd97ad7f222774` |
-| Hookshot | `device-lost-fix` | `HookshotBuilder.zip` | 398,156,393 | `c663d16738e3d8970c40bc12e0f2587f96a2e582228139dc0bbb9b4ed79078d9` |
+| Hookshot | `v2.0.0` | `HookshotBuilder.exe` | 175,616 | `46e1f7d6a8e2649fe34737f3d9536ff5f7e08acefc72d5194dd00ab2c1085672` |
+| Hookshot | `v2.0.0` | `hookshot-setup.txt` | 1,658 | `b4ca5be4ee0b0e9ab8e5cd49d76ff77d4ce0366d3e89185e947011fc837acf9d` |
+| Hookshot | `v2.0.0` | `Hookshot-v2.0.0-x86_64.AppImage` | 215,542,264 | `8d0e537110e4fb864f8c4d223036bcf2a2774c5f1d20a083419ca3f2d952e6f5` |
 | TriAevum | `v0.8.0-beta.1.2` | `SHA256SUMS.txt` | 332 | `ebfdc35b8743fb1d32bc6da834e26fcef78e21488ed9566f1194308d276047ed` |
 | TriAevum | `v0.8.0-beta.1.2` | `TriAevum-v0.8.0-beta.1.2-Linux-x86_64.AppImage` | 465,828,344 | `2e80fb50e1d21ffc5cc852a90f715408b82e65839e8baf8b3dbf6f9295d5296a` |
 | TriAevum | `v0.8.0-beta.1.2` | `TriAevum-v0.8.0-beta.1.2-Linux-x86_64.flatpak` | 269,893,960 | `575db1812b37070e9512192bf760d5d78b9efda158b740a089a2eb1a528a54ef` |
@@ -26,7 +27,7 @@ Verify a download:
 
 ```sh
 # Windows
-certutil -hashfile HookshotBuilder.zip SHA256
+certutil -hashfile HookshotBuilder.exe SHA256
 # Linux
 sha256sum Hookshot-*-x86_64.AppImage
 # macOS
@@ -34,6 +35,16 @@ shasum -a 256 Ocarina-Setup-*-windows.zip
 ```
 
 Or drop the file into the in-browser checker on [ocarinarecomp.wiki](https://ocarinarecomp.wiki/) (WebCrypto, nothing is uploaded).
+
+## Hookshot v2.0.0 (2026-11-08)
+
+The first numbered Hookshot release. On Windows only `HookshotBuilder.exe` is needed: it downloads the builder and its tools (about 460 MB, once) and checks every part against the SHA-256 listed in `hookshot-setup.txt`. The old `HookshotBuilder.zip` ended with `device-lost-fix`.
+
+- `hookshot.exe` now opens a launcher with **Play**, and **Update** when a newer release is out. Updates download only the changed parts and compile only what changed. The game and its DLLs moved to `bin\`; saves and settings stay.
+- Fixes: flickering (#574), water flicker and fog haze, a crash on scene changes around Hyrule Castle, Castle Town and Kakariko (#287), neon colours on AMD.
+- Earlier the same day: real ultrawide (HUD kept 16:9), about 45% more fps (33 → 47 in Kokiri on an RTX 4060 Ti), 4 GB card and Intel Arc fixes.
+
+Full notes: [Hookshot guide](https://ocarinarecomp.wiki/hookshot/) · [changelog](https://ocarinarecomp.wiki/changelog/).
 
 ## Which one should I use?
 
