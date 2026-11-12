@@ -16,9 +16,9 @@ This repository contains **no binaries, game files, keys or ROMs**, and does not
 
 | Project | Tag | File | Bytes | SHA-256 |
 |---|---|---|---|---|
-| Hookshot | `v2.1.0` | `HookshotBuilder.exe` | 175,616 | `46e1f7d6a8e2649fe34737f3d9536ff5f7e08acefc72d5194dd00ab2c1085672` |
-| Hookshot | `v2.1.0` | `hookshot-setup.txt` | 1,687 | `c852e8c096f16d658a472ebcf6f72c37d9b5472df5155da913760cb6dc0f9cb2` |
-| Hookshot | `v2.1.0` | `Hookshot-v2.1.0-x86_64.AppImage` | 216,133,816 | `0164e97c3114e22b4ad1ca7826f50d0eb5f35852586c1c4e4de2c3bd053fb50c` |
+| Hookshot | `v2.1.0` | `HookshotBuilder.exe` | 185,856 | `552a24c4c210a87dd3d6494a88a1a707cbedf6e50ddd2604caa5719c5c63a05e` |
+| Hookshot | `v2.1.0` | `hookshot-setup.txt` | 1,658 | `21a0263b44443ebeff7768bbc4b720709c3245f7340a579dc85bd219cce0df74` |
+| Hookshot | `v2.1.0` | `Hookshot-v2.1.0-x86_64.AppImage` | 242,149,880 | `c0b2e958ae00dc560072154f890b9be422724abd9bb522d6afd9922788b86e02` |
 | NX2navi | `v0.8.0` | `NX2navi-Setup-0.8.0.exe` | 136,923,839 | `0ad3aeb1dafe81246e5a24e82804668c1b15159b27c84d95713e4d58f2a886ab` |
 | NX2navi | `v0.8.0` | `NX2navi-Linux-0.8.0-x86_64.AppImage` | 101,087,736 | `b7deb7147658f0d0c97f4ed1b9721ce78eebc96c92111b617d1a2d333d2a39f7` |
 | Ocarina Recomp | `v0.3.4` | `Ocarina-Setup-0.3.4-windows.zip` | 116,061,045 | `7e4906c2b9147dd6f974d382dbe1626e27ec9c69caa70f7167df9b31aca9dd72` |
